@@ -7,7 +7,8 @@ class Stormtrooper:
     def __str__(self):
         return "El stormtrooper {} se ha creado con exito" . format(self.nombre)
     
-    def calificacion(self, codigo, cohoerte, siglo, escuadra, numero):
+class Calificacion(Stormtrooper):
+    def __init__(self, codigo, cohoerte, siglo, escuadra, numero):
         self.codigo = codigo
         self.cohoerte = cohoerte
         self.siglo = siglo
