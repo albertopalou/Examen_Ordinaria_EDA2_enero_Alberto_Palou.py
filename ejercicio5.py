@@ -1,15 +1,15 @@
 class Mochila:
     
-    def __init__(self, peso, valor, indice):
+    def __init__(self, peso, precios, indice):
         self.peso = peso
-        self.valor = valor
+        self.precios = precios
         self.indice = indice
-        self.coef = valor // peso
+        self.coef = precios // peso
     
-    def valormax(self, peso, valores, capacidad):
+    def pesomax(self, peso, precios, capacidad):
         arraySort = []
         for i in range (len(peso)):
-            arraySort.append(Mochila (peso [i], valores[i], i))
+            arraySort.append(Mochila (peso [i], precios[i], i))
 
         arraySort.sort(reverse=True)
 
@@ -22,3 +22,6 @@ class Mochila:
                 capacidad -= pesoActual
                 counterValue += precioActual
         return counterValue
+
+precio = [103, 60, 70, 5, 15]
+peso = [12, 23, 11, 15, 7]
