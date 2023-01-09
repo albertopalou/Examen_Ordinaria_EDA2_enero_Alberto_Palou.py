@@ -26,7 +26,6 @@ soldado3 = Calificacion("Andrew", "Solado raso", "JK", "3", "9", "4", "5")
 
 lista = [soldado1, soldado2, soldado3]
 
-print(Calificacion.lista())
 print(soldado1)
 print(soldado2)
 print(soldado3)
