@@ -15,3 +15,5 @@ artefacto2 = ArtefactosValiosos("70", "mueble", "550", "22-03-2028")
 artefacto3 = ArtefactosValiosos("100", "espejo", "180", "01-04-2040")
 
 print(artefacto1)
+print(artefacto2)
+print(artefacto3)
