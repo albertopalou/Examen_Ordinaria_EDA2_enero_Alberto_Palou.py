@@ -25,3 +25,7 @@ class Mochila:
 
 precio = [103, 60, 70, 5, 15]
 peso = [12, 23, 11, 15, 7]
+peso_maximo = 100
+
+valormaximo = Mochila.pesomax(peso, precio, peso_maximo)
+print("Valor maximo en la mochila: ", valormaximo)
