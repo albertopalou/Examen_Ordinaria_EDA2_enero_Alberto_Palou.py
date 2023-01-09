@@ -33,6 +33,13 @@ def make_tree(nodes):
 if __name__ == "__main__":
     message = "M031FA"
     key_list = ["A", "F", "1", "3", "0", "M", "T"]
+    value_list = [0.2, 0.17, 0.13, 0.21, 0.05, 0.09, 0.15]
+    freq = dict(zip(key_list, value_list))
+    freq = sorted(freq.items(), key=lambda x: x[1], reverse=True)
+    node = make_tree(freq)
+    encoding = huffman_code_tree(node)
+    for i in encoding:
+        print(f"{i} : {encoding[i]}")
 
     
 
